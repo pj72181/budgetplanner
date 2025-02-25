@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Budget Planner</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="setting.html">Settings</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="history">
+            <h2>Transaction History</h2>
+            <p>Here you can view, edit, or delete past transactions.</p>
+            <ul id="transaction-list"></ul>
+        </section>
+
+        <section id="filters">
+            <h2>Filter Transactions</h2>
+            <label for="filter-category">Category:</label>
+            <select id="filter-category">
+                <option value="all">All</option>
+                <option value="income">Income</option>
+                <option value="rent">Rent</option>
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select>
+            <button id="apply-filter">Apply Filter</button>
+        </section>
+
+        <section id="report-section">
+            <h2>Download Report</h2>
+            <button id="download-report">Download Transaction Report (PDF)</button>
+        </section>
+    </main>
+</body>
+</html>

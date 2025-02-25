@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Budget Planner</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="login.html">login</a>
+            <a href="history.html">History</a>
+            <a href="setting.html">Settings</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="income-expense">
+            <h2>Add Transaction</h2>
+            <input type="text" id="desc" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="category">
+                <option value="income">Income</option>
+                <option value="rent">Rent</option>
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select>
+            <button id="add-transaction-btn">Add</button>
+        </section>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>Total Income: $<span id="total-income">0</span></p>
+            <p>Total Expenses: $<span id="total-expenses">0</span></p>
+            <p>Balance: $<span id="balance">0</span></p>
+            <p>Savings Goal: $<input type="number" id="savings-goal" placeholder="Enter goal"></p>
+            <p>Progress: <span id="savings-progress">0%</span></p>
+            <button id="download-report">Download Report (PDF)</button>
+        </section>
+
+        <section id="chart-section">
+            <h2>Spending Breakdown</h2>
+            <canvas id="expenseChart"></canvas>
+        </section>
+
+        <section id="ai-chatbot">
+            <h2>AI Budget Assistant</h2>
+            <input type="text" id="chat-input" placeholder="Ask for budget tips...">
+            <button id="chat-submit">Ask</button>
+            <p id="chat-response"></p>
+        </section>
+    </main>
+</body>
+</html>
