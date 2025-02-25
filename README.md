@@ -12,3 +12,5 @@ This is a budget management app where users can add, track, and analyze their ex
 
 ## Setup Instructions
 1. Clone the repository:
+2. Open the `index.html` file in a browser.
+3. Connect Firebase by adding your own Firebase credentials in `script.js`.
